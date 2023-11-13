@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of items">
+      {{item.name}} - ${{item.price}}
+      <button (click)="removeItem(item)">Remove</button>
+    </li>
+  </ul>
+  Total Price: ${{totalPrice()}}

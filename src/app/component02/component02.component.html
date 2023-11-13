@@ -1,0 +1,8 @@
+<div *ngIf="isLoading()">
+    Loading...
+  </div>
+  <table *ngIf="!isLoading()">
+    <thead>...</thead>
+    <tbody>...</tbody>
+  </table>
+<button (click)="changeValues()">Test Log Signals</button>

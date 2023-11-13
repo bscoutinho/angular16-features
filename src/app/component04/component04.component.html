@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let item of filteredTodos()">
+      {{item.title}} - {{item.completed}}
+      <button (click)="removeTodo(item)">remove</button>
+    </li>
+  </ul>
+<button (click)="addTodo()">update todo</button>
+<button (click)="toggleCompleted()">show/hide completed</button>

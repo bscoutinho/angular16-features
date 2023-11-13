@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let message of chatService.messagesSignal()">{{ message }}</li>
+  </ul>
+  <input [(ngModel)]="newMessage">
+  <button (click)="send()">Send</button>

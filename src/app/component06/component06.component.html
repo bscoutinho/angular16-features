@@ -1,0 +1,9 @@
+<input [ngModel]="searchInput()" (ngModelChange)="searchUser($event)" placeholder="Search">
+  
+  <ul>
+    <li *ngFor="let user of paginatedAndFilteredUsers()">{{ user.name }}</li>
+  </ul>
+
+  <button (click)="goToPrevPage()">Previous</button>
+  pag. {{ currentPage() }}
+  <button (click)="goToNextPage()">Next</button>

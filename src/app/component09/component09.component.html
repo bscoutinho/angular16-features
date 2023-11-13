@@ -1,0 +1,17 @@
+
+<p>Signal01: {{ exSignal01() }}</p>
+<p>Signal02: {{ exSignal02() | json }}</p>
+<p>Signal03: {{ exSignal03() }}</p>
+<p>Signal04: {{ exSignal04() }}</p>
+<p>Signal04: {{ exSignal05() | json }}</p>
+<p>Observable converted from signal: {{ exSignal$ | async }}</p>
+<p>Signal converted from observable: {{ exSignal06() }}</p>
+<button (click)="setSignal()">Set Signal</button>
+<button (click)="updateSignal()">Update Signal</button>
+<button (click)="mutateSignal()">Mutate Signal</button>
+<button (click)="toggleSignal()">Toggle Signal</button>
+<button (click)="receiveSignal()">Receive Signal</button>
+<button (click)="sendSignal()">Send Signal</button>
+<on-push-teste message="test message">
+
+
